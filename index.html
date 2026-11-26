@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo Vórtice | Exploración Planetaria</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body id="inicio">
+
+  <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+  <header class="encabezado">
+    <div class="contenedor barra-flex">
+      <a href="index.html" class="logo">MUSEO <span>VÓRTICE</span></a>
+
+      <nav class="menu">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="exposiciones.html">Exposiciones</a>
+        <a href="galerias.html">Galerías</a>
+        <a href="agenda.html">Agenda tu visita</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PORTADA CON FONDO ESPACIAL -->
+  <section class="hero">
+    <div class="contenedor hero-contenido">
+      <p class="etiqueta">CIENCIA  ASTRONOMÍA  PLANETAS</p>
+      <h1>Un viaje por los mundos de nuestro sistema solar</h1>
+      <p class="hero-texto">
+        En <strong>Museo Vórtice</strong> exploramos la astronomía y la ciencia planetaria
+        mediante salas temáticas, maquetas a escala, observaciones guiadas y galerías visuales
+        diseñadas para estudiantes, familias y curiosos del espacio.
+      </p>
+      <div class="fila-botones">
+        <a href="exposiciones.html" class="btn btn-primario">Explorar exposiciones</a>
+        <a href="agenda.html" class="btn btn-secundario">Agenda tu visita</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- AVISO DE FOLIO GENERADO (SI VIENES REDIRIGIDO DESDE AGENDA.HTML) -->
+    <section id="aviso-folio-inicio" class="seccion" style="display: none; padding-top: 2rem; padding-bottom: 0;">
+      <div class="contenedor">
+        <div class="caja-folio" style="display: block;">
+          <p class="folio-titulo">Visita agendada — Folio: <span id="folio-inicio-codigo"></span></p>
+          <p id="folio-inicio-detalle" class="folio-detalle"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ ES MUSEO VÓRTICE Y QUÉ OFRECE -->
+    <section id="sobre-museo" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">¿Qué ofrece Museo Vórtice?</h2>
+        <p class="subtitulo-seccion">Un espacio dedicado a comprender cómo funcionan los planetas, sus atmósferas y sus órbitas.</p>
+
+        <div class="contenedor-flex">
+          <div class="bloque-info">
+            <h3>Experiencias y Actividades</h3>
+            <ul class="lista-entradas">
+              <li>
+                <div>
+                  <strong>Salas Planetarias Temáticas</strong>
+                  <span>Recorridos divididos por mundos rocosos, gigantes exteriores y satélites naturales.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Talleres de Astronomía Básica</strong>
+                  <span>Dinámicas sobre escalas planetarias, gravedad, fases y movimientos orbitales.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Visitas Escolares y Guiadas</strong>
+                  <span>Material didáctico y explicaciones adaptadas para grupos de distintos niveles.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bloque-info">
+            <h3>Enfoque del Museo</h3>
+            <p class="texto-bloque">
+              Nuestro objetivo es traducir los datos y fotografías del sistema solar en experiencias claras,
+              visuales y accesibles. Comparamos tamaños, composiciones y trayectorias para entender
+              por qué cada mundo es distinto.
+            </p>
+            <dl class="lista-definicion">
+              <dt>Ciencia planetaria</dt>
+              <dd>Estudio de la estructura, geología, atmósfera y evolución de planetas y lunas.</dd>
+              <dt>Mecánica orbital</dt>
+              <dd>Análisis de cómo la gravedad y la velocidad mantienen estables las trayectorias celestes.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALAS PRINCIPALES -->
+    <section class="seccion seccion-alterna">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestras Salas Principales</h2>
+        <p class="subtitulo-seccion">Conoce cada exposición y entra directamente a su galería.</p>
+
+        <div class="contenedor-flex">
+          <article class="tarjeta">
+            <img src="img/rocosos.jpg" alt="Superficie de planetas rocosos">
+            <div class="tarjeta-cuerpo">
+              <h3>Planetas Rocosos</h3>
+              <p>Mercurio, Venus, la Tierra y Marte: superficies sólidas, cráteres, volcanes y atmósferas interiores.</p>
+              <a href="galerias.html#rocosos" class="enlace-tarjeta">Ver galería →</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/gaseosos.jpg" alt="Gigantes gaseosos Júpiter y Saturno">
+            <div class="tarjeta-cuerpo">
+              <h3>Gigantes Gaseosos y de Hielo</h3>
+              <p>Júpiter, Saturno, Urano y Neptuno: anillos, bandas de nubes, tormentas y mundos exteriores.</p>
+              <a href="galerias.html#gaseosos" class="enlace-tarjeta">Ver galería →</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/lunas.jpg" alt="Lunas y órbitas del sistema solar">
+            <div class="tarjeta-cuerpo">
+              <h3>Lunas y Órbitas</h3>
+              <p>Satélites naturales, mareas gravitatorias, resonancias y mundos helados en órbita.</p>
+              <a href="galerias.html#lunas" class="enlace-tarjeta">Ver galería →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS, PRECIOS DE ENTRADAS Y UBICACIÓN -->
+    <section id="tarifas" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Horarios, Entradas y Ubicación</h2>
+        <p class="subtitulo-seccion">Consulta nuestros horarios de apertura, tarifas vigentes y cómo llegar.</p>
+
+        <div class="contenedor-flex">
+          <!-- TABLA DE HORARIOS -->
+          <div class="bloque-info">
+            <h3>Horarios de Atención</h3>
+            <table class="tabla-horarios">
+              <caption>Horarios semanales del Museo Vórtice</caption>
+              <thead>
+                <tr>
+                  <th>Día</th>
+                  <th>Horario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes</td>
+                  <td class="cerrado">Cerrado</td>
+                </tr>
+                <tr>
+                  <td>Martes a Viernes</td>
+                  <td>10:00 a.m. – 6:00 p.m.</td>
+                </tr>
+                <tr>
+                  <td>Sábado y Domingo</td>
+                  <td>10:00 a.m. – 8:00 p.m.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- LISTA DE ENTRADAS / PRECIOS -->
+          <div class="bloque-info">
+            <h3>Tipos de Entradas</h3>
+            <ul class="lista-entradas">
+              <li>
+                <div>
+                  <strong>Entrada General</strong>
+                  <span>Mayores de 13 años</span>
+                </div>
+                <span class="precio">$90 MXN</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Estudiantes y Docentes</strong>
+                  <span>Con credencial vigente</span>
+                </div>
+                <span class="precio">$45 MXN</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Niños y Adultos Mayores</strong>
+                  <span>Menores de 12 años e INAPAM</span>
+                </div>
+                <span class="precio gratis">Entrada libre</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- UBICACIÓN CON IMAGEN Y LINK A GOOGLE MAPS -->
+        <div class="bloque-ubicacion contenedor-ubicacion">
+          <img src="img/ubicacion.jpg" alt="Fachada y ubicación del Museo Vórtice" class="img-ubicacion">
+          <div class="info-ubicacion">
+            <h3>Ubicación</h3>
+            <p><strong>Dirección:</strong> Av. Universidad Nacional S/N, Bosques de Aragon, 57171 Cdad. Nezahualcóyotl, Méx. , CDMX</p>
+            <p><strong>Referencia:</strong> Por Av. Universidad Nacional, a la altura de la FES Aragón, Bosques de Aragón.</p>
+            <a href="https://maps.app.goo.gl/uYHXhgnBX4R6Pp458" target="_blank" rel="noopener" class="btn btn-primario">
+              Abrir en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDEN DEL RECORRIDO -->
+    <section class="seccion seccion-alterna">
+      <div class="contenedor">
+        <div class="bloque-info bloque-centrado">
+          <h3>Orden sugerido de recorrido</h3>
+          <ol class="lista-ordenada">
+            <li>Comienza en <strong>Planetas Rocosos</strong> para conocer los mundos interiores.</li>
+            <li>Continúa en <strong>Gigantes Gaseosos y de Hielo</strong> para comparar escalas y atmósferas.</li>
+            <li>Finaliza en <strong>Lunas y Órbitas</strong> y revisa las galerías antes de tu visita.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA Y CRÉDITOS -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 Museo Vórtice. Proyecto Final de Programación Web I.</p>
+      <p class="creditos">
+        .
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

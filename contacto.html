@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Museo Vórtice</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor barra-flex">
+      <a href="index.html" class="logo">MUSEO <span>VÓRTICE</span></a>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="exposiciones.html">Exposiciones</a>
+        <a href="galerias.html">Galerías</a>
+        <a href="agenda.html">Agenda tu visita</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor grid-contacto">
+      <div class="columna-contacto">
+        <h1>Contacto y Ubicación</h1>
+        <p>Tienes dudas, sugerencias o comentarios sobre <strong>Museo Vórtice</strong> Aquí tienes nuestra información oficial y dónde encontrarnos.</p>
+
+        <ul class="datos-contacto">
+          <li><strong>Correo electrónico:</strong> contacto@museovortice.mx</li>
+          <li><strong>Teléfono:</strong> (52) 56 6485 7625 </li>
+          <li><strong>Redes sociales:</strong> @MuseoVortice</li>
+          <li><strong>Ubicación:</strong> Av. Universidad Nacional S/N, Bosques de Aragon, 57171 Cdad. Nezahualcóyotl, Méx. , CDMX</li>
+          <li><strong>Referencia:</strong> Por Av. Universidad Nacional, a la altura de la FES Aragón, Bosques de Aragón.</li>
+          <li><strong>Horarios:</strong> Martes–Viernes 10:00 a.m. – 6:00 p.m. | Sábado–Domingo 10:00 a.m. – 8:00 p.m. (Lunes Cerrado)</li>
+        </ul>
+
+        <div class="fila-botones" style="margin-top: 1.5rem;">
+          <a href="https://maps.app.goo.gl/uYHXhgnBX4R6Pp458" target="_blank" rel="noopener" class="btn btn-secundario">
+            Ver en Google Maps
+          </a>
+          <a href="agenda.html" class="btn btn-primario">
+            Agenda tu visita
+          </a>
+        </div>
+      </div>
+
+      <form id="form-comentarios" class="formulario-contacto">
+        <fieldset class="grupo-fieldset">
+          <legend>Envíanos un Comentario o Mensaje</legend>
+
+          <label for="nombre-contacto">Nombre completo:</label>
+          <input type="text" id="nombre-contacto" name="nombre" placeholder="Escribe tu nombre" required>
+
+          <label for="correo-contacto">Correo electrónico:</label>
+          <input type="email" id="correo-contacto" name="correo" placeholder="Escribe tu correo electrónico" required>
+
+          <label for="asunto-contacto">Motivo:</label>
+          <select id="asunto-contacto" name="asunto">
+            <option value="Comentario o sugerencia">Comentario o sugerencia</option>
+            <option value="Duda sobre exposiciones">Duda sobre exposiciones</option>
+            <option value="Visitas escolares o grupos">Visitas escolares o grupos</option>
+            <option value="Otro mensaje">Otro mensaje</option>
+          </select>
+
+          <label for="mensaje-contacto">Comentarios o mensaje:</label>
+          <textarea id="mensaje-contacto" name="mensaje" rows="4" placeholder="Escribe aquí tus comentarios o dudas..." required></textarea>
+        </fieldset>
+
+        <div class="fila-botones">
+          <button type="reset" class="btn btn-secundario">Limpiar</button>
+          <button type="submit" class="btn btn-primario">Enviar comentario</button>
+        </div>
+
+        <div id="aviso-enviado" class="caja-folio">
+          <p class="folio-titulo">Comentario registrado</p>
+          <p id="detalle-comentario" class="folio-detalle"></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p> 2026 Museo Vórtice. Proyecto académico de Programación Web I.</p>
+      
+    </div>
+  </footer>
+
+  
+
+</body>
+</html>
